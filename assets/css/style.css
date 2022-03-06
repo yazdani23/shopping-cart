@@ -93,6 +93,73 @@ header {
 .icon-header {
   font-size: 20pt;
 }
+/* //////// cart /////////// */
+.cart {
+  position: relative;
+}
+.quantity-total-cart {
+  background: red;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  color: white;
+  font-size: 9pt;
+  /* padding: 1px 3px ; */
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+/* //////////////cart-list///////////////// */
+.cart-list {
+  background: #eeeeee;
+  position: absolute;
+  font-size: 9pt;
+  width: 250px;
+  padding: 10px;
+  top: 30px;
+  left: -125px;
+  display: none;
+}
+.cart:hover .cart-list {
+  display: block;
+}
+.cart-list ul {
+  margin: 0;
+  padding: 0;
+}
+.cart-list li {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.cart-list a {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-list img {
+  width: 30px;
+  height: 30px;
+}
+.properties-cart {
+  padding: 5px 0;
+}
+.properties-cart span {
+  padding-left: 8px;
+}
+.item-number {
+  width: 30px;
+  cursor: pointer;
+}
+.delete-item {
+  color: red;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
 /* //////// bottom-header /////////// */
 .bottom-header {
   width: 100%;
@@ -228,7 +295,6 @@ main {
 .fa-star{
   color: gold;
 }
-
 /* //////// footer /////////// */
 footer {
   height: 400px;
